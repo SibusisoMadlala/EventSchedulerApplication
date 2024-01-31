@@ -223,7 +223,7 @@ def view_event():
         else:
             event_list[event].display_event()
     else:
-        view_event()
+        print("incorrect option")
             
 def delete_event():
     deletedate = input("please enter date of the event you wish to delete: ")
@@ -251,7 +251,6 @@ def edit_event():
     
     if index==-1:
         print("event does not exist")
-        edit_event()
         
     newtitle = input("Edit title: ")
     newdescription = input("Edit description: ")
